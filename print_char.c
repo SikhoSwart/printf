@@ -4,10 +4,8 @@
  * @c: character
  * Return: 1
  */
-int print_char(int c)
-{i
-	char ch;
-
-	_putchar(ch);
+int print_char(char c)
+{
+	_putchar(c);
 	return (1);
 }

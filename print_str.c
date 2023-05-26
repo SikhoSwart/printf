@@ -7,16 +7,15 @@
 int print_str(char *s)
 {
 	int i;
-	char *str;
 
-	if (!str)
+	if (!s)
 	{
-		str = "(null)";
+		s = "(null)";
 	}
 	i = 0;
-	while (str[i])
+	while (s[i])
 	{
-		_putchar(str[i]);
+		_putchar(s[i]);
 		i++;
 	}
 	return (i);
