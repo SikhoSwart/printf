@@ -6,5 +6,7 @@
 #include <stddef.h>
 
 int _putchar(char c);
-
+int print_perc(void);
+int print_str(va_list s);
+int print_char(va_list c);
 #endif
