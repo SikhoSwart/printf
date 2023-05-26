@@ -1,11 +1,10 @@
 #include "main.h"
-#include <stdarg.h>
 /**
  * print_str  - handles string conversion
  * @s: string
  * Return: number of characters printed
  */
-int print_str(va_list s)
+int print_str(char *s)
 {
 	int i;
 	char *str;
