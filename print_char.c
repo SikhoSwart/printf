@@ -8,7 +8,6 @@ int print_char(int c)
 {i
 	char ch;
 
-	ch = va_arg(c, int);
 	_putchar(ch);
 	return (1);
 }

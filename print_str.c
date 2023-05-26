@@ -9,7 +9,6 @@ int print_str(char *s)
 	int i;
 	char *str;
 
-	str = va_arg(s, char *);
 	if (!str)
 	{
 		str = "(null)";
