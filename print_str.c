@@ -4,7 +4,7 @@
  * @s: string
  * Return: number of characters printed
  */
-int print_str(char *s)
+int print_str(const char *s)
 {
 	int i;
 
