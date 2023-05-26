@@ -11,6 +11,10 @@ int _printf(const char *format, ...);
 
 int print_format(char format, va_list args);
 
-void print_number(int n);
+int print_number(int n);
+
+int print_perc(void);
+int print_str(const char *s);
+int print_char(char c);
 
 #endif

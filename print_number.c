@@ -3,27 +3,35 @@
 /**
  * putunbr - print an unsigned integer
  * @n: unsigned int
+ * Return: digits count
  */
-void putunbr(unsigned int n)
+int putunbr(unsigned int n)
 {
+	int length;
+
+	length = 0;
 	if (n >= 10)
-		putunbr(n / 10);
-	_putchar((n % 10) + '0');
+		length += putunbr(n / 10);
+	return (length + _putchar((n % 10) + '0'));
 }
 
 /**
  * print_number - print an integer
  * @n: int
+ * Return: number length
  */
-void print_number(int n)
+int print_number(int n)
 {
 	unsigned int num;
+	int length;
 
+	length = 0;
 	if (n < 0)
 		num = -n;
 	else
 		num = n;
 	if (n < 0)
-		_putchar('-');
-	putunbr(num);
+		length += _putchar('-');
+	length += putunbr(num);
+	return (length);
 }
