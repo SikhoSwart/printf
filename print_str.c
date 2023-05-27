@@ -6,11 +6,17 @@
  */
 int print_str(char *s)
 {
-	int i;
+	int i, len;
 
+	len = _strlen(s);
 	if (!s)
 	{
 		s = "(null)";
+		for (i = 0; i < len; i++)
+		{
+			_putchar(s[i]);
+		}
+		return (len);
 	}
 	i = 0;
 	while (s[i])
@@ -18,5 +24,5 @@ int print_str(char *s)
 		_putchar(s[i]);
 		i++;
 	}
-	return (i);
+	return (len);
 }
