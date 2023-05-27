@@ -6,17 +6,17 @@
  */
 int print_str(char *s)
 {
-	int i, len;
+	int i;
 
-	len = _strlen(s);
+	i = 0;
 	if (!s)
 	{
 		s = "(null)";
-		for (i = 0; i < len; i++)
+		while (s[i])
 		{
 			_putchar(s[i]);
 		}
-		return (len);
+		return (i);
 	}
 	i = 0;
 	while (s[i])
