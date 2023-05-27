@@ -15,6 +15,7 @@ int print_str(char *s)
 		while (s[i])
 		{
 			_putchar(s[i]);
+			i++;
 		}
 		return (i);
 	}
