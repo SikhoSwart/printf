@@ -27,6 +27,8 @@ int print_format(char format, va_list args)
 		count += print_octal(va_arg(args, unsigned int));
 	else if (format == 'p')
 		count += print_address(va_arg(args, const void *));
+	else if (format == 'r')
+		count += print_reverse_str(va_arg(args, const char *));
 	else if (format == '%')
 		count += print_perc();
 	else

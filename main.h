@@ -25,6 +25,10 @@ int print_non_printable_str(const char *str);
 
 int print_address(const void *p);
 
+int print_reverse_str(const char *str);
+
+int _strlen(const char *str);
+
 int print_perc(void);
 int print_str(const char *s);
 int print_char(char c);
