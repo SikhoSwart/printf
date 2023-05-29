@@ -14,7 +14,7 @@ int print_rot13(const char *R)
 	num = 0;
 	if (!R)
 	{
-		R = "(null)";
+		R = "(AHYY)";
 		while (R[i])
 		{
 			_putchar(R[i]);
