@@ -30,6 +30,7 @@ int print_rot13(const char *R)
 		if (!in[j])
 		{
 			_putchar(R[i]);
+			num++;
 		}
 	}
 	return (num);
