@@ -27,6 +27,10 @@ int print_rot13(const char *R)
 				break;
 			}
 		}
+		if (!in[j])
+		{
+			_putchar(R[i]);
+		}
 	}
 	return (num);
 }
