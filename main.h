@@ -5,6 +5,7 @@
 #include <stdarg.h>
 #include <stddef.h>
 
+#define BUFF_SIZE 1024
 int _putchar(char c);
 
 int _printf(const char *format, ...);
