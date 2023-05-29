@@ -6,7 +6,7 @@
  */
 int print_rot13(const char *R)
 {
-	int i, j, num;
+	int i, j, num, k;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char out[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
@@ -18,18 +18,21 @@ int print_rot13(const char *R)
 	}
 	for (i = 0; R[i] != '\0'; i++)
 	{
+		k = 0;
 		for (j = 0; in[j] != '\0'; j++)
 		{
 			if (R[i] == in[j])
 			{
 				_putchar(out[j]);
 				num++;
+				k = 1;
 				break;
 			}
 		}
-		if (!in[j])
+		if (!k)
 		{
 			_putchar(R[i]);
+			num++;
 		}
 	}
 	return (num);
