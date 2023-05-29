@@ -13,6 +13,8 @@ int print_format(char format, va_list args)
 	count = 0;
 	if (format == 'c')
 		count += print_char((char)va_arg(args, int));
+	else if (format == 'b')
+		count+= print_binary(va_arg(args, unsigned int));
 	else if (format == 's')
 		count += print_str(va_arg(args, const char *));
 	else if (format == 'S')
