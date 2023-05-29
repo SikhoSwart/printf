@@ -7,6 +7,7 @@
 
 int _putchar(char c);
 int print_perc(void);
-int print_str(va_list s);
-int print_char(va_list c);
+int print_str(const char *s);
+int print_char(char c);
+int print_binary(unsigned int b);
 #endif
