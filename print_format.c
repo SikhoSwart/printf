@@ -16,7 +16,7 @@ int print_format(char format, va_list args)
 	else if (format == 'R')
 		count += print_rot13(va_arg(args, const char *));
 	else if (format == 'b')
-		count+= print_binary(va_arg(args, unsigned int));
+		count += print_binary(va_arg(args, unsigned int));
 	else if (format == 's')
 		count += print_str(va_arg(args, const char *));
 	else if (format == 'S')
