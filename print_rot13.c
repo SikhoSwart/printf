@@ -14,13 +14,7 @@ int print_rot13(const char *R)
 	num = 0;
 	if (!R)
 	{
-		R = "(AHYY)";
-		while (R[i])
-		{
-			_putchar(R[i]);
-			i++;
-		}
-		return (i);
+		R = "(ahyy)";
 	}
 	for (i = 0; R[i] != '\0'; i++)
 	{
