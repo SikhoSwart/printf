@@ -33,5 +33,5 @@ int print_perc(void);
 int print_str(const char *s);
 int print_char(char c);
 int print_binary(unsigned int b);
-
+int print_rot13(const char *R);
 #endif
