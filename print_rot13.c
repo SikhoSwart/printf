@@ -4,7 +4,7 @@
  * @R: string to rot13
  * Return: number of characters printed
  */
-int print_rot13(char *R)
+int print_rot13(const char *R)
 {
 	int i, j, num;
 	char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
